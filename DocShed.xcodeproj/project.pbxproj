@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C306B39619AAFE9000B98ECB /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B37E19AAFE9000B98ECB /* NSObject+SBJson.m */; };
+		C306B39719AAFE9000B98ECB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B38119AAFE9000B98ECB /* SBJsonParser.m */; };
+		C306B39819AAFE9000B98ECB /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B38319AAFE9000B98ECB /* SBJsonStreamParser.m */; };
+		C306B39919AAFE9000B98ECB /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B38519AAFE9000B98ECB /* SBJsonStreamParserAccumulator.m */; };
+		C306B39A19AAFE9000B98ECB /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B38719AAFE9000B98ECB /* SBJsonStreamParserAdapter.m */; };
+		C306B39B19AAFE9000B98ECB /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B38919AAFE9000B98ECB /* SBJsonStreamParserState.m */; };
+		C306B39C19AAFE9000B98ECB /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B38B19AAFE9000B98ECB /* SBJsonStreamWriter.m */; };
+		C306B39D19AAFE9000B98ECB /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B38D19AAFE9000B98ECB /* SBJsonStreamWriterAccumulator.m */; };
+		C306B39E19AAFE9000B98ECB /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B38F19AAFE9000B98ECB /* SBJsonStreamWriterState.m */; };
+		C306B39F19AAFE9000B98ECB /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B39119AAFE9000B98ECB /* SBJsonTokeniser.m */; };
+		C306B3A019AAFE9000B98ECB /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B39319AAFE9000B98ECB /* SBJsonUTF8Stream.m */; };
+		C306B3A119AAFE9000B98ECB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C306B39519AAFE9000B98ECB /* SBJsonWriter.m */; };
+		C349F00A1998FC26006F9EBC /* doctorsListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C349F0091998FC26006F9EBC /* doctorsListView.m */; };
+		C349F00D1998FC48006F9EBC /* doctorsLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C349F00C1998FC48006F9EBC /* doctorsLoginView.m */; };
+		C3919C5F19B43C4A009B3C1E /* app-bg-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3919C5E19B43C4A009B3C1E /* app-bg-@2x.png */; };
+		C39376FD19B88E4700C8B588 /* images-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C39376FC19B88E4700C8B588 /* images-2.jpeg */; };
+		C39B5E1619A89B9100B7B708 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39B5E1519A89B9100B7B708 /* MessageUI.framework */; };
+		C39C0A6F19B44457000A3EA4 /* find-doctors-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C39C0A6E19B44457000A3EA4 /* find-doctors-btn.png */; };
+		C39C0A7119B44544000A3EA4 /* find-doctor-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C39C0A7019B44544000A3EA4 /* find-doctor-logo.png */; };
+		C3AEC46019B59147009DCA8D /* Book Appointment.png in Resources */ = {isa = PBXBuildFile; fileRef = C3AEC45C19B59147009DCA8D /* Book Appointment.png */; };
+		C3AEC46119B59147009DCA8D /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = C3AEC45D19B59147009DCA8D /* Login.png */; };
+		C3AEC46219B59147009DCA8D /* req Appointment.png in Resources */ = {isa = PBXBuildFile; fileRef = C3AEC45E19B59147009DCA8D /* req Appointment.png */; };
+		C3AEC46319B59147009DCA8D /* submit.png in Resources */ = {isa = PBXBuildFile; fileRef = C3AEC45F19B59147009DCA8D /* submit.png */; };
+		C3AEC46619B5A2E8009DCA8D /* doctor-login-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C3AEC46419B5A2E8009DCA8D /* doctor-login-btn.png */; };
+		C3AEC46719B5A2E8009DCA8D /* patient-login-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C3AEC46519B5A2E8009DCA8D /* patient-login-btn.png */; };
+		C3B1C21A19988D01007037D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B1C21919988D01007037D2 /* Foundation.framework */; };
+		C3B1C21C19988D01007037D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B1C21B19988D01007037D2 /* CoreGraphics.framework */; };
+		C3B1C21E19988D01007037D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B1C21D19988D01007037D2 /* UIKit.framework */; };
+		C3B1C22419988D01007037D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3B1C22219988D01007037D2 /* InfoPlist.strings */; };
+		C3B1C22619988D01007037D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1C22519988D01007037D2 /* main.m */; };
+		C3B1C22A19988D01007037D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1C22919988D01007037D2 /* AppDelegate.m */; };
+		C3B1C22D19988D01007037D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B1C22B19988D01007037D2 /* Main.storyboard */; };
+		C3B1C23019988D01007037D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1C22F19988D01007037D2 /* ViewController.m */; };
+		C3B1C23219988D01007037D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B1C23119988D01007037D2 /* Images.xcassets */; };
+		C3B1C23919988D01007037D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B1C23819988D01007037D2 /* XCTest.framework */; };
+		C3B1C23A19988D01007037D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B1C21919988D01007037D2 /* Foundation.framework */; };
+		C3B1C23B19988D01007037D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B1C21D19988D01007037D2 /* UIKit.framework */; };
+		C3B1C24319988D01007037D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3B1C24119988D01007037D2 /* InfoPlist.strings */; };
+		C3B1C24519988D01007037D2 /* DoctorApptSchedulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1C24419988D01007037D2 /* DoctorApptSchedulerTests.m */; };
+		C3B37A68199A34F200A46DA4 /* historyOfAppointments.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B37A67199A34F200A46DA4 /* historyOfAppointments.m */; };
+		C3B37A6B199A350C00A46DA4 /* scheduleTimePage.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B37A6A199A350C00A46DA4 /* scheduleTimePage.m */; };
+		C3F599A2199A13D7005408BB /* doctorsProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F599A1199A13D7005408BB /* doctorsProfileView.m */; };
+		C3F599A5199A13F7005408BB /* doctorsReqViewByPatient.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F599A4199A13F7005408BB /* doctorsReqViewByPatient.m */; };
+		C3F599AB199A1435005408BB /* patientsLoginPage.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F599AA199A1435005408BB /* patientsLoginPage.m */; };
+		C3F599B1199A1471005408BB /* historyOfVisitToDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F599B0199A1471005408BB /* historyOfVisitToDoctor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3B1C23C19988D01007037D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3B1C20E19988D01007037D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3B1C21519988D01007037D2;
+			remoteInfo = DoctorApptScheduler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C306B37D19AAFE9000B98ECB /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		C306B37E19AAFE9000B98ECB /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		C306B37F19AAFE9000B98ECB /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		C306B38019AAFE9000B98ECB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		C306B38119AAFE9000B98ECB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		C306B38219AAFE9000B98ECB /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		C306B38319AAFE9000B98ECB /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		C306B38419AAFE9000B98ECB /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		C306B38519AAFE9000B98ECB /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		C306B38619AAFE9000B98ECB /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		C306B38719AAFE9000B98ECB /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		C306B38819AAFE9000B98ECB /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		C306B38919AAFE9000B98ECB /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		C306B38A19AAFE9000B98ECB /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		C306B38B19AAFE9000B98ECB /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		C306B38C19AAFE9000B98ECB /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		C306B38D19AAFE9000B98ECB /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		C306B38E19AAFE9000B98ECB /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		C306B38F19AAFE9000B98ECB /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		C306B39019AAFE9000B98ECB /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		C306B39119AAFE9000B98ECB /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		C306B39219AAFE9000B98ECB /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		C306B39319AAFE9000B98ECB /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		C306B39419AAFE9000B98ECB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		C306B39519AAFE9000B98ECB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		C349F0081998FC26006F9EBC /* doctorsListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doctorsListView.h; sourceTree = "<group>"; };
+		C349F0091998FC26006F9EBC /* doctorsListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doctorsListView.m; sourceTree = "<group>"; };
+		C349F00B1998FC48006F9EBC /* doctorsLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doctorsLoginView.h; sourceTree = "<group>"; };
+		C349F00C1998FC48006F9EBC /* doctorsLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doctorsLoginView.m; sourceTree = "<group>"; };
+		C3919C5E19B43C4A009B3C1E /* app-bg-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-bg-@2x.png"; sourceTree = "<group>"; };
+		C39376FC19B88E4700C8B588 /* images-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-2.jpeg"; sourceTree = "<group>"; };
+		C39B5E1519A89B9100B7B708 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C39C0A6E19B44457000A3EA4 /* find-doctors-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find-doctors-btn.png"; sourceTree = "<group>"; };
+		C39C0A7019B44544000A3EA4 /* find-doctor-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find-doctor-logo.png"; sourceTree = "<group>"; };
+		C3AEC45C19B59147009DCA8D /* Book Appointment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Book Appointment.png"; sourceTree = "<group>"; };
+		C3AEC45D19B59147009DCA8D /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
+		C3AEC45E19B59147009DCA8D /* req Appointment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "req Appointment.png"; sourceTree = "<group>"; };
+		C3AEC45F19B59147009DCA8D /* submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit.png; sourceTree = "<group>"; };
+		C3AEC46419B5A2E8009DCA8D /* doctor-login-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doctor-login-btn.png"; sourceTree = "<group>"; };
+		C3AEC46519B5A2E8009DCA8D /* patient-login-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "patient-login-btn.png"; sourceTree = "<group>"; };
+		C3B1C21619988D01007037D2 /* DocShed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocShed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B1C21919988D01007037D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3B1C21B19988D01007037D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C3B1C21D19988D01007037D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C3B1C22119988D01007037D2 /* DocShed-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DocShed-Info.plist"; sourceTree = "<group>"; };
+		C3B1C22319988D01007037D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3B1C22519988D01007037D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3B1C22719988D01007037D2 /* DocShed-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DocShed-Prefix.pch"; sourceTree = "<group>"; };
+		C3B1C22819988D01007037D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3B1C22919988D01007037D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3B1C22C19988D01007037D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3B1C22E19988D01007037D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C3B1C22F19988D01007037D2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C3B1C23119988D01007037D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3B1C23719988D01007037D2 /* DocShedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocShedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B1C23819988D01007037D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C3B1C24019988D01007037D2 /* DocShedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DocShedTests-Info.plist"; sourceTree = "<group>"; };
+		C3B1C24219988D01007037D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3B1C24419988D01007037D2 /* DoctorApptSchedulerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoctorApptSchedulerTests.m; sourceTree = "<group>"; };
+		C3B37A66199A34F200A46DA4 /* historyOfAppointments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = historyOfAppointments.h; sourceTree = "<group>"; };
+		C3B37A67199A34F200A46DA4 /* historyOfAppointments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = historyOfAppointments.m; sourceTree = "<group>"; };
+		C3B37A69199A350C00A46DA4 /* scheduleTimePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scheduleTimePage.h; sourceTree = "<group>"; };
+		C3B37A6A199A350C00A46DA4 /* scheduleTimePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scheduleTimePage.m; sourceTree = "<group>"; };
+		C3F599A0199A13D7005408BB /* doctorsProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doctorsProfileView.h; sourceTree = "<group>"; };
+		C3F599A1199A13D7005408BB /* doctorsProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doctorsProfileView.m; sourceTree = "<group>"; };
+		C3F599A3199A13F7005408BB /* doctorsReqViewByPatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doctorsReqViewByPatient.h; sourceTree = "<group>"; };
+		C3F599A4199A13F7005408BB /* doctorsReqViewByPatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doctorsReqViewByPatient.m; sourceTree = "<group>"; };
+		C3F599A9199A1435005408BB /* patientsLoginPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = patientsLoginPage.h; sourceTree = "<group>"; };
+		C3F599AA199A1435005408BB /* patientsLoginPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = patientsLoginPage.m; sourceTree = "<group>"; };
+		C3F599AF199A1471005408BB /* historyOfVisitToDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = historyOfVisitToDoctor.h; sourceTree = "<group>"; };
+		C3F599B0199A1471005408BB /* historyOfVisitToDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = historyOfVisitToDoctor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3B1C21319988D01007037D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39B5E1619A89B9100B7B708 /* MessageUI.framework in Frameworks */,
+				C3B1C21C19988D01007037D2 /* CoreGraphics.framework in Frameworks */,
+				C3B1C21E19988D01007037D2 /* UIKit.framework in Frameworks */,
+				C3B1C21A19988D01007037D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B1C23419988D01007037D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B1C23919988D01007037D2 /* XCTest.framework in Frameworks */,
+				C3B1C23B19988D01007037D2 /* UIKit.framework in Frameworks */,
+				C3B1C23A19988D01007037D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3A961B3199B860D009D551C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3A961B4199B864E009D551C /* JSON */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3A961B4199B864E009D551C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C306B37D19AAFE9000B98ECB /* NSObject+SBJson.h */,
+				C306B37E19AAFE9000B98ECB /* NSObject+SBJson.m */,
+				C306B37F19AAFE9000B98ECB /* SBJson.h */,
+				C306B38019AAFE9000B98ECB /* SBJsonParser.h */,
+				C306B38119AAFE9000B98ECB /* SBJsonParser.m */,
+				C306B38219AAFE9000B98ECB /* SBJsonStreamParser.h */,
+				C306B38319AAFE9000B98ECB /* SBJsonStreamParser.m */,
+				C306B38419AAFE9000B98ECB /* SBJsonStreamParserAccumulator.h */,
+				C306B38519AAFE9000B98ECB /* SBJsonStreamParserAccumulator.m */,
+				C306B38619AAFE9000B98ECB /* SBJsonStreamParserAdapter.h */,
+				C306B38719AAFE9000B98ECB /* SBJsonStreamParserAdapter.m */,
+				C306B38819AAFE9000B98ECB /* SBJsonStreamParserState.h */,
+				C306B38919AAFE9000B98ECB /* SBJsonStreamParserState.m */,
+				C306B38A19AAFE9000B98ECB /* SBJsonStreamWriter.h */,
+				C306B38B19AAFE9000B98ECB /* SBJsonStreamWriter.m */,
+				C306B38C19AAFE9000B98ECB /* SBJsonStreamWriterAccumulator.h */,
+				C306B38D19AAFE9000B98ECB /* SBJsonStreamWriterAccumulator.m */,
+				C306B38E19AAFE9000B98ECB /* SBJsonStreamWriterState.h */,
+				C306B38F19AAFE9000B98ECB /* SBJsonStreamWriterState.m */,
+				C306B39019AAFE9000B98ECB /* SBJsonTokeniser.h */,
+				C306B39119AAFE9000B98ECB /* SBJsonTokeniser.m */,
+				C306B39219AAFE9000B98ECB /* SBJsonUTF8Stream.h */,
+				C306B39319AAFE9000B98ECB /* SBJsonUTF8Stream.m */,
+				C306B39419AAFE9000B98ECB /* SBJsonWriter.h */,
+				C306B39519AAFE9000B98ECB /* SBJsonWriter.m */,
+				C3B1C22019988D01007037D2 /* Supporting Files */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		C3B1C20D19988D01007037D2 = {
+			isa = PBXGroup;
+			children = (
+				C3B1C21F19988D01007037D2 /* DocShed */,
+				C3B1C23E19988D01007037D2 /* DoctorApptSchedulerTests */,
+				C3B1C21819988D01007037D2 /* Frameworks */,
+				C3B1C21719988D01007037D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3B1C21719988D01007037D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3B1C21619988D01007037D2 /* DocShed.app */,
+				C3B1C23719988D01007037D2 /* DocShedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3B1C21819988D01007037D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C39B5E1519A89B9100B7B708 /* MessageUI.framework */,
+				C3B1C21919988D01007037D2 /* Foundation.framework */,
+				C3B1C21B19988D01007037D2 /* CoreGraphics.framework */,
+				C3B1C21D19988D01007037D2 /* UIKit.framework */,
+				C3B1C23819988D01007037D2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3B1C21F19988D01007037D2 /* DocShed */ = {
+			isa = PBXGroup;
+			children = (
+				C3B1C22819988D01007037D2 /* AppDelegate.h */,
+				C3B1C22919988D01007037D2 /* AppDelegate.m */,
+				C3B1C22B19988D01007037D2 /* Main.storyboard */,
+				C3B1C22E19988D01007037D2 /* ViewController.h */,
+				C3B1C22F19988D01007037D2 /* ViewController.m */,
+				C3B1C23119988D01007037D2 /* Images.xcassets */,
+				C3A961B3199B860D009D551C /* Supporting Files */,
+				C349F0081998FC26006F9EBC /* doctorsListView.h */,
+				C349F0091998FC26006F9EBC /* doctorsListView.m */,
+				C349F00B1998FC48006F9EBC /* doctorsLoginView.h */,
+				C349F00C1998FC48006F9EBC /* doctorsLoginView.m */,
+				C3F599A0199A13D7005408BB /* doctorsProfileView.h */,
+				C3F599A1199A13D7005408BB /* doctorsProfileView.m */,
+				C3F599A3199A13F7005408BB /* doctorsReqViewByPatient.h */,
+				C3F599A4199A13F7005408BB /* doctorsReqViewByPatient.m */,
+				C3F599A9199A1435005408BB /* patientsLoginPage.h */,
+				C3F599AA199A1435005408BB /* patientsLoginPage.m */,
+				C3F599AF199A1471005408BB /* historyOfVisitToDoctor.h */,
+				C3F599B0199A1471005408BB /* historyOfVisitToDoctor.m */,
+				C3B37A66199A34F200A46DA4 /* historyOfAppointments.h */,
+				C3B37A67199A34F200A46DA4 /* historyOfAppointments.m */,
+				C3B37A69199A350C00A46DA4 /* scheduleTimePage.h */,
+				C3B37A6A199A350C00A46DA4 /* scheduleTimePage.m */,
+			);
+			name = DocShed;
+			path = DoctorApptScheduler;
+			sourceTree = "<group>";
+		};
+		C3B1C22019988D01007037D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3B1C24E19988D25007037D2 /* Images */,
+				C3B1C22119988D01007037D2 /* DocShed-Info.plist */,
+				C3B1C22219988D01007037D2 /* InfoPlist.strings */,
+				C3B1C22519988D01007037D2 /* main.m */,
+				C3B1C22719988D01007037D2 /* DocShed-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3B1C23E19988D01007037D2 /* DoctorApptSchedulerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3B1C24419988D01007037D2 /* DoctorApptSchedulerTests.m */,
+				C3B1C23F19988D01007037D2 /* Supporting Files */,
+			);
+			path = DoctorApptSchedulerTests;
+			sourceTree = "<group>";
+		};
+		C3B1C23F19988D01007037D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3B1C24019988D01007037D2 /* DocShedTests-Info.plist */,
+				C3B1C24119988D01007037D2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3B1C24E19988D25007037D2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C39376FC19B88E4700C8B588 /* images-2.jpeg */,
+				C3AEC45C19B59147009DCA8D /* Book Appointment.png */,
+				C3AEC45D19B59147009DCA8D /* Login.png */,
+				C3AEC46419B5A2E8009DCA8D /* doctor-login-btn.png */,
+				C3AEC46519B5A2E8009DCA8D /* patient-login-btn.png */,
+				C3AEC45E19B59147009DCA8D /* req Appointment.png */,
+				C3AEC45F19B59147009DCA8D /* submit.png */,
+				C39C0A7019B44544000A3EA4 /* find-doctor-logo.png */,
+				C39C0A6E19B44457000A3EA4 /* find-doctors-btn.png */,
+				C3919C5E19B43C4A009B3C1E /* app-bg-@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3B1C21519988D01007037D2 /* DocShed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B1C24819988D01007037D2 /* Build configuration list for PBXNativeTarget "DocShed" */;
+			buildPhases = (
+				C3B1C21219988D01007037D2 /* Sources */,
+				C3B1C21319988D01007037D2 /* Frameworks */,
+				C3B1C21419988D01007037D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocShed;
+			productName = DoctorApptScheduler;
+			productReference = C3B1C21619988D01007037D2 /* DocShed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3B1C23619988D01007037D2 /* DocShedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B1C24B19988D01007037D2 /* Build configuration list for PBXNativeTarget "DocShedTests" */;
+			buildPhases = (
+				C3B1C23319988D01007037D2 /* Sources */,
+				C3B1C23419988D01007037D2 /* Frameworks */,
+				C3B1C23519988D01007037D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3B1C23D19988D01007037D2 /* PBXTargetDependency */,
+			);
+			name = DocShedTests;
+			productName = DoctorApptSchedulerTests;
+			productReference = C3B1C23719988D01007037D2 /* DocShedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3B1C20E19988D01007037D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					C3B1C23619988D01007037D2 = {
+						TestTargetID = C3B1C21519988D01007037D2;
+					};
+				};
+			};
+			buildConfigurationList = C3B1C21119988D01007037D2 /* Build configuration list for PBXProject "DocShed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3B1C20D19988D01007037D2;
+			productRefGroup = C3B1C21719988D01007037D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3B1C21519988D01007037D2 /* DocShed */,
+				C3B1C23619988D01007037D2 /* DocShedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3B1C21419988D01007037D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3AEC46019B59147009DCA8D /* Book Appointment.png in Resources */,
+				C39C0A6F19B44457000A3EA4 /* find-doctors-btn.png in Resources */,
+				C3B1C23219988D01007037D2 /* Images.xcassets in Resources */,
+				C3AEC46319B59147009DCA8D /* submit.png in Resources */,
+				C3AEC46719B5A2E8009DCA8D /* patient-login-btn.png in Resources */,
+				C3AEC46219B59147009DCA8D /* req Appointment.png in Resources */,
+				C39C0A7119B44544000A3EA4 /* find-doctor-logo.png in Resources */,
+				C3B1C22419988D01007037D2 /* InfoPlist.strings in Resources */,
+				C39376FD19B88E4700C8B588 /* images-2.jpeg in Resources */,
+				C3AEC46619B5A2E8009DCA8D /* doctor-login-btn.png in Resources */,
+				C3AEC46119B59147009DCA8D /* Login.png in Resources */,
+				C3B1C22D19988D01007037D2 /* Main.storyboard in Resources */,
+				C3919C5F19B43C4A009B3C1E /* app-bg-@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B1C23519988D01007037D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B1C24319988D01007037D2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3B1C21219988D01007037D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C306B39719AAFE9000B98ECB /* SBJsonParser.m in Sources */,
+				C306B39919AAFE9000B98ECB /* SBJsonStreamParserAccumulator.m in Sources */,
+				C306B39F19AAFE9000B98ECB /* SBJsonTokeniser.m in Sources */,
+				C3B1C23019988D01007037D2 /* ViewController.m in Sources */,
+				C3F599A2199A13D7005408BB /* doctorsProfileView.m in Sources */,
+				C3B37A68199A34F200A46DA4 /* historyOfAppointments.m in Sources */,
+				C3F599A5199A13F7005408BB /* doctorsReqViewByPatient.m in Sources */,
+				C306B39C19AAFE9000B98ECB /* SBJsonStreamWriter.m in Sources */,
+				C349F00A1998FC26006F9EBC /* doctorsListView.m in Sources */,
+				C3B37A6B199A350C00A46DA4 /* scheduleTimePage.m in Sources */,
+				C3F599B1199A1471005408BB /* historyOfVisitToDoctor.m in Sources */,
+				C349F00D1998FC48006F9EBC /* doctorsLoginView.m in Sources */,
+				C3B1C22A19988D01007037D2 /* AppDelegate.m in Sources */,
+				C306B39D19AAFE9000B98ECB /* SBJsonStreamWriterAccumulator.m in Sources */,
+				C3B1C22619988D01007037D2 /* main.m in Sources */,
+				C3F599AB199A1435005408BB /* patientsLoginPage.m in Sources */,
+				C306B39E19AAFE9000B98ECB /* SBJsonStreamWriterState.m in Sources */,
+				C306B3A019AAFE9000B98ECB /* SBJsonUTF8Stream.m in Sources */,
+				C306B39619AAFE9000B98ECB /* NSObject+SBJson.m in Sources */,
+				C306B3A119AAFE9000B98ECB /* SBJsonWriter.m in Sources */,
+				C306B39819AAFE9000B98ECB /* SBJsonStreamParser.m in Sources */,
+				C306B39B19AAFE9000B98ECB /* SBJsonStreamParserState.m in Sources */,
+				C306B39A19AAFE9000B98ECB /* SBJsonStreamParserAdapter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B1C23319988D01007037D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B1C24519988D01007037D2 /* DoctorApptSchedulerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3B1C23D19988D01007037D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3B1C21519988D01007037D2 /* DocShed */;
+			targetProxy = C3B1C23C19988D01007037D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3B1C22219988D01007037D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3B1C22319988D01007037D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3B1C22B19988D01007037D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3B1C22C19988D01007037D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3B1C24119988D01007037D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3B1C24219988D01007037D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3B1C24619988D01007037D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C3B1C24719988D01007037D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3B1C24919988D01007037D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoctorApptScheduler/DocShed-Prefix.pch";
+				INFOPLIST_FILE = "DoctorApptScheduler/DocShed-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = DocShed;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C3B1C24A19988D01007037D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoctorApptScheduler/DocShed-Prefix.pch";
+				INFOPLIST_FILE = "DoctorApptScheduler/DocShed-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = DocShed;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C3B1C24C19988D01007037D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DoctorApptScheduler.app/DoctorApptScheduler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoctorApptScheduler/DoctorApptScheduler-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DoctorApptSchedulerTests/DocShedTests-Info.plist";
+				PRODUCT_NAME = DocShedTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C3B1C24D19988D01007037D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DoctorApptScheduler.app/DoctorApptScheduler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoctorApptScheduler/DoctorApptScheduler-Prefix.pch";
+				INFOPLIST_FILE = "DoctorApptSchedulerTests/DocShedTests-Info.plist";
+				PRODUCT_NAME = DocShedTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3B1C21119988D01007037D2 /* Build configuration list for PBXProject "DocShed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B1C24619988D01007037D2 /* Debug */,
+				C3B1C24719988D01007037D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3B1C24819988D01007037D2 /* Build configuration list for PBXNativeTarget "DocShed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B1C24919988D01007037D2 /* Debug */,
+				C3B1C24A19988D01007037D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3B1C24B19988D01007037D2 /* Build configuration list for PBXNativeTarget "DocShedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B1C24C19988D01007037D2 /* Debug */,
+				C3B1C24D19988D01007037D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3B1C20E19988D01007037D2 /* Project object */;
+}
